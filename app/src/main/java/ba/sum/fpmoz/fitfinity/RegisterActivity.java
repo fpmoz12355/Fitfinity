@@ -23,6 +23,8 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         // Polja za unos podataka
+       // EditText registerFirtsnameTxt = findViewById(R.id.registerFirstnameTxt);
+       // EditText registerLastnameTxt = findViewById(R.id.registerLastnameTxt);
         EditText registerEmailTxt = findViewById(R.id.registerEmailTxt);
         EditText registerPasswordTxt = findViewById(R.id.registerPasswordTxt);
         EditText registerPasswordCnfTxt = findViewById(R.id.registerPasswordCnfTxt);
@@ -33,21 +35,25 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Dohvaćanje podataka
+
                 String email = registerEmailTxt.getText().toString();
                 String password = registerPasswordTxt.getText().toString();
                 String passwordCnf = registerPasswordCnfTxt.getText().toString();
 
+
                 if (!email.equals("") && !password.equals("") && password.equals(passwordCnf)) {
-                    mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    mAuth.createUserWithEmailAndPassword (email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
+                              //  registerFirtsnameTxt.setText("");
+                                // registerLastnameTxt.setText("");
                                 registerEmailTxt.setText("");
                                 registerPasswordTxt.setText("");
                                 registerPasswordCnfTxt.setText("");
                                 Toast.makeText(
                                         getApplicationContext(),
-                                        "Uspješno ste napravili račun.",
+                                        "Uspješno ste se registirali.",
                                         Toast.LENGTH_LONG
                                 ).show();
                             }

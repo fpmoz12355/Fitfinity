@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
-                                Toast.makeText(getBaseContext(), "Prijavili ste se na sustav, dobrodošli.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getBaseContext(), "Dobrodošli na Fitfinity!", Toast.LENGTH_SHORT).show();
                                 Intent movieIntent = new Intent(LoginActivity.this, ReceiptsActivity.class);
                                 startActivity(movieIntent);
                             } else {
