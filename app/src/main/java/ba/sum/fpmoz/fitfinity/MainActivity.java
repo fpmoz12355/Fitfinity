@@ -1,15 +1,11 @@
 package ba.sum.fpmoz.fitfinity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import ba.sum.fpmoz.fitfinity.LoginActivity;
-import ba.sum.fpmoz.fitfinity.R;
-import ba.sum.fpmoz.fitfinity.RegisterActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,9 +1,7 @@
 package ba.sum.fpmoz.fitfinity;
 
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.firebase.auth.FirebaseAuth;
 
 
@@ -18,6 +16,4 @@ public class ReceiptsActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_receipts);
     }
-
-
 }
