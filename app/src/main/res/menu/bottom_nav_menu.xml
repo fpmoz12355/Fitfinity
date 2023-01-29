@@ -7,10 +7,12 @@
     <item android:title="Pretraživanje"
         android:icon="@drawable/ic_baseline_search_24"
         android:id="@+id/search"/>
-    <item android:title="Moj profil"
+    <item
+        android:id="@+id/favorites"
+        android:icon="@drawable/ic_favorites"
+        android:title="Favoriti" />
+    <item
+        android:id="@+id/profile"
         android:icon="@drawable/ic_baseline_person_24"
-        android:id="@+id/person"/>
-    <item android:title="Postavke"
-        android:icon="@drawable/ic_baseline_settings_24"
-        android:id="@+id/settings"/>
+        android:title="Profil" />
 </menu>

@@ -18,6 +18,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,11 +26,11 @@ public class RegisterActivity extends AppCompatActivity {
         // Polja za unos podataka
        // EditText registerFirtsnameTxt = findViewById(R.id.registerFirstnameTxt);
        // EditText registerLastnameTxt = findViewById(R.id.registerLastnameTxt);
-        EditText registerEmailTxt = findViewById(R.id.registerEmailTxt);
-        EditText registerPasswordTxt = findViewById(R.id.registerPasswordTxt);
-        EditText registerPasswordCnfTxt = findViewById(R.id.registerPasswordCnfTxt);
+        EditText registerEmailTxt = findViewById(R.id.profile1FirstnameTxt);
+        EditText registerPasswordTxt = findViewById(R.id.profile1LastnameTxt);
+        EditText registerPasswordCnfTxt = findViewById(R.id.profile1EmailTxt);
         // Gumb za registraciju
-        Button registerBtn = findViewById(R.id.registerBtn);
+        Button registerBtn = findViewById(R.id.profile1SaveBtn);
         // Što se događa nakon klika
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
