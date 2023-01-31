@@ -30,12 +30,12 @@ public class ReceiptsActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.search:
-                        startActivity(new Intent(getApplicationContext(), Profile1Activity.class));
+                        startActivity(new Intent(getApplicationContext(), SearchActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 
                     case R.id.favorites:
-                        startActivity(new Intent(getApplicationContext(), Profile1Activity.class));
+                        startActivity(new Intent(getApplicationContext(), FavoritesActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 
@@ -47,6 +47,9 @@ public class ReceiptsActivity extends AppCompatActivity {
                 }
                 return false;
             }
+
+
         });
+
     }
 }
